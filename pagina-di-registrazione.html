@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina di Registrazione</title>
+     <link rel="icon" type="image/svg" href="asset/graphic-logo.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img 
+        id="logo"
+        src="asset/logo.svg"
+        height="300px"
+        width="300px"
+        alt="logo">
+    </header>
+
+    <main>
+        <h1>Benvenuto/a!</h1>
+        <p>Registrarti per ascoltare e scoprire nuova musica.</p>
+
+        <form id="music-app-form" onsubmit="alert('Form Inviato!')">
+            <fieldset>
+                <legend>Informazioni Personali</legend>
+                <label for="name">Nome:</label>
+                <input 
+                type="text" 
+                id="name"
+                name="name"
+                placeholder="es. Mario"
+                required>
+
+                <label for="surname">Cognome:</label>
+                <input
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="es. Rossi"
+                required
+                >
+
+                <label for="email">Indirizzo  e-mail:</label>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="esempio@email.com"
+                required
+                size="20"
+                >
+
+                <label for="password">Password:</label>
+                <input
+                type="password"
+                id="password"
+                name="password"
+                required>
+
+                <label for="birth-date">Data di Nascita:</label>
+                <input
+                type="date"
+                id="birth-date"
+                name="date"
+                required
+                >
+
+                <label for="phone-number">Numero di cellulare:</label>
+                <input
+                type="number"
+                id="phone-number"
+                name="phone-number"
+                required
+                >
+            </fieldset>
+
+            <div id="music-genres">
+            <fieldset>
+                <legend>Quale genere di musica ti piace ascoltare?</legend>
+                
+                <div class="generi-grid">
+                    <div class="genere-item">
+                        <input
+                        type="checkbox"
+                        id="pop-music"
+                        name="genres"
+                        value="pop"
+                        >
+                        <label for="pop-music">Pop</label>
+                    </div>
+
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="rock-music"
+                name="genres"
+                value="rock"
+                >
+                <label for="rock-music">Rock</label>
+                </div>
+
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="metal-music"
+                name="genres"
+                value="metal"
+                >
+                <label for="metal-music">Metal</label>
+                </div>
+            
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="rap-music"
+                name="genres"
+                value="rap"
+                >
+                <label for="rap-music">Rap</label>               
+                </div>
+
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="dance-music"
+                name="genres"
+                value="elettronica-dance"
+                >
+                <label for="dance-music">Elettronica / Dance</label>
+                </div>
+
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="alt-music"
+                name="genres"
+                value="indie-alt"
+                >
+                <label for="alt-music">Indie / Alternative</label>
+                </div>
+                
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="r&b-music"
+                name="genres"
+                value="r&b-soul"
+                >
+                <label for="r&b-music">R&B / Soul</label>
+                </div>
+                  
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="jazz-music"
+                name="genres"
+                value="jazz"
+                >
+                <label for="jazz-music">Jazz</label>
+                </div>
+                  
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="classical-music"
+                name="genres"
+                value="classica"
+                >
+                <label for="classical-music">Classica</label>
+                </div>
+                 
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="latina-music"
+                name="genres"
+                value="latina"
+                >
+                <label for="latina-music">Musica Latina</label>
+                </div>
+                 
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="kpop-music"
+                name="genres"
+                value="kpop"
+                >
+                <label for="kpop-music">K-Pop</label>
+                </div>
+                                                
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="reggae-music"
+                name="genres"
+                value="raggae"
+                >     
+                <label for="reggae-music">Reggae</label>
+                </div> 
+
+                <div class="genere-item">
+                <input
+                type="checkbox"
+                id="country-music"
+                name="genres"
+                value="country"
+                >
+                <label for="country-music">Country</label>
+                </div>
+                </div>
+            </fieldset>
+            </div>
+
+            <fieldset>
+                <p>Dichiaro di aver letto e compreso la Privacy Policy e accetto i Termini e Condizioni del servizio.
+                    <input
+                    type="radio"
+                    id="accept-terms"
+                    name="terms-choice"
+                    value="yes"
+                    required>
+                    <label for="accept-terms">
+                        Sì.
+                    </label>
+
+                     <input
+                    type="radio"
+                    id="refuse-terms"
+                    name="terms-choice"
+                    value="no">
+                    <label for="refuse-terms">
+                        No.
+                    </label>
+                </p>
+                    
+
+                <p>Acconsento al trattamento dei miei dati personali per ricevere comunicazioni promozionali, newsletter e offerte personalizzate.
+                    <input
+                    type="radio"
+                    id="accept-marketing"
+                    name="marketing-choice"
+                    value="yes">
+                    <label for="accept-marketing">
+                        Sì.
+                    </label>
+
+                     <input
+                    type="radio"
+                    id="refuse-marketing"
+                    name="marketing-choice"
+                    value="no">
+                    <label for="refuse-marketing">
+                        No.
+                    </label>
+                </p>
+                    
+            </fieldset>
+
+            <button 
+            type="submit">
+            Invia registrazione
+            </button>
+        </form>
+    </main>
+
+</body>
+</html>
